@@ -1,0 +1,14 @@
+{
+  "name": "node-crawl",
+  "version": "0.0.1",
+  "description": "some useful tools for Node.js crawling",
+  "main": "index.js",
+  "repository": "https://github.com/2256184693/node-crawl.git",
+  "author": "shihao <shihao@guazi.com>",
+  "license": "MIT",
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.10",
+    "got": "^11.8.2",
+    "ora": "^5.4.1"
+  }
+}
