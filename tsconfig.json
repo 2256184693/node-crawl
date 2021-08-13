@@ -1,0 +1,36 @@
+{
+    "compilerOptions": {
+        "rootDir": "./src",
+        "baseUrl": "./",
+        "outDir": "./lib",
+        "module": "commonjs",
+        "target": "es6",
+        // 通过为导入内容创建命名空间，实现CommonJS和ES模块之间的互操作性
+        "esModuleInterop": true,
+        // 启用实验性的ES装饰器
+        "experimentalDecorators": true, 
+        // isolatedModules的值为true或false，指定是否将每个文件作为单独的模块，默认为true，它不可以和declaration同时设定
+        "isolatedModules": true,   
+        "moduleResolution": "node",
+        "paths": {
+            "src": ["./src/"]
+        },
+        "lib": [
+            "DOM",
+            "es5",
+            "es2015",
+            "es2016",
+            "es2017",
+            "es2018",
+        ],
+        "types": [
+            "node",
+        ]
+    },
+    "include": [
+        "src/**/*",
+    ],
+    "exclude": [
+        "lib/*"
+    ]
+}
