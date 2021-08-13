@@ -37,8 +37,6 @@ router.get('/:bookId/:chapterId', async (ctx) => {
 
     const sortedFiles = sortByIndex(files)
 
-    logger.debug(`加载页面 - ${bookId} - ${chapterId} - ${currentChapterId}`)
-
     const html = (`
     <!DOCTYPE html>
     <html lang="en">
